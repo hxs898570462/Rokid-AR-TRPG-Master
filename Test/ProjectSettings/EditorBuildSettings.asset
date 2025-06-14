@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoSpatial6DoF.unity
     guid: 5c5dbf57bed2311499304b40e0c0784b
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e8ad1e65a8e30274fbf39d5607f7d7a8, type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 32fd95eeef282db42a4c7bb56492da49, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 931012b31fe519d48b2cef5e42fa420a, type: 2}
-    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 9231f1b5e2a13c140b2261414a9e75e3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 56a9d05ab93f1de4da824cadfdf36bd7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: cbf5c733b28ca274d93f7d20b7617d32, type: 2}
