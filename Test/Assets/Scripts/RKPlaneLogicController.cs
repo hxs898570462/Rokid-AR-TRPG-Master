@@ -21,6 +21,9 @@ public class RKPlaneLogicController : MonoBehaviour
     [Header("放置完成后需要隐藏的UI")]
     public GameObject pointableUIButton;
 
+    public GameObject startTrackingButton; 
+    public GameObject loadingText;         
+
     private void Start()
     {
         planeTracking.startTracking();
@@ -30,6 +33,16 @@ public class RKPlaneLogicController : MonoBehaviour
     private void OnDestroy()
     {
         RKPointerListener.OnPhysicalPointerDown -= OnPointerDown;
+    }
+
+    public void OnStartTrackingClicked()
+    {
+        startTrackingButton.SetActive(false);
+        loadingText.SetActive(true);
+
+        planeTracking.startTracking();
+
+        RKPointerListener.OnPhysicalPointerDown += OnPointerDown;
     }
 
     private void OnPointerDown(PointerEventData data)
